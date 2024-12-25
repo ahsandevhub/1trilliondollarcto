@@ -6,7 +6,12 @@ import {
   faTelegram,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faChartBar } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChartBar,
+  faCheck,
+  faCopy,
+  faExternalLinkAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -14,6 +19,15 @@ import { useEffect, useState } from "react";
 const HomePage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [imagePosition, setImagePosition] = useState({ x: 0, y: 0 });
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("0xa51e5c7d7d36e7fa6173a229a887a403c67c611f");
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false); // Reset after 2 seconds
+    }, 2000);
+  };
 
   // Update mouse position
   useEffect(() => {
@@ -125,25 +139,25 @@ const HomePage = () => {
       {/* About Us Section */}
       <div className="min-h-screen flex items-center bg-gradient-to-r from-gray-950 via-gray-800 to-black text-white">
         <div className="container max-w-screen-xl mx-auto px-6 py-16 mt-8 text-center md:text-left">
-          <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid items-center grid-cols-1 gap-12">
             {/* Left Section: Embedded DEXTools Link */}
-            <div className="h-full w-full aspect-video">
+            <div className="h-full w-full flex justify-center items-center">
               <iframe
                 id="dextools-widget"
                 title="DEXTools Trading Chart"
                 src="https://www.dextools.io/widget-chart/en/ether/pe-light/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f?theme=dark&chartType=2&chartResolution=30&drawingToolbars=false"
-                className="h-full w-full rounded-md border border-gray-600"
+                className="h-full w-full max-w-screen-md aspect-video rounded-md border border-gray-600"
               ></iframe>
             </div>
 
             {/* Right Section: About Details */}
-            <div className="text-center text-gray-300 space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent mb-8">
+            <div className="text-center max-w-screen-md mx-auto text-gray-300 space-y-6">
+              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent mb-8">
                 About Trillion Dollar Coin
               </h2>
               <p className="text-base">
                 Community Takeover of the 1T Coin: A Trillion Dollar Coin for
-                the People by the people The 1T CTO is a satirical
+                the People by the people. The 1T CTO is a satirical
                 community-driven initiative to claim ownership of the
                 much-discussed yet often derided concept of the "Trillion Dollar
                 Coin." Originally proposed as a means to bypass the U.S. debt
@@ -188,6 +202,60 @@ const HomePage = () => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Tokenomics Section */}
+      <div className="relative flex justify-center items-center bg-gradient-to-b from-gray-950 to-black text-white py-16">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/photo_2024-12-24_01-11-08.jpg"
+            alt="Background"
+            layout="fill"
+            objectFit="contain"
+            className="opacity-20"
+          />
+        </div>
+        <div className="container py-20 z-10 max-w-screen-xl mx-auto px-6 space-y-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent mb-8">
+            Tokenomics
+          </h2>
+
+          {/* Token Address */}
+          <div className="flex justify-center space-x-4 items-center">
+            <span className="bg-gray-700 text-white px-4 py-2 rounded-md text-lg md:text-xl">
+              0xa51e5c7d7d36e7fa6173a229a887a403c67c611f
+            </span>
+          </div>
+          <div className="buttons flex justify-center">
+            {!copied ? (
+              <button
+                onClick={handleCopy}
+                className="text-white text-2xl hover:text-sky-400 border border-gray-700 px-5 py-3 bg-gray-600 hover:bg-gray-700 transition-all duration-300 rounded-md flex items-center"
+              >
+                <FontAwesomeIcon icon={faCopy} className="mr-2" />
+                Copy
+              </button>
+            ) : (
+              <button className="text-white text-2xl bg-gradient-to-r from-green-500 to-green-700 px-5 py-3 rounded-md flex items-center">
+                <FontAwesomeIcon icon={faCheck} className="mr-2" />
+                Copied!
+              </button>
+            )}
+          </div>
+
+          {/* Etherscan Link */}
+          <div className="flex justify-center">
+            <a
+              href="https://etherscan.io/token/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gray-700 text-white px-6 py-3 rounded-md text-lg md:text-xl hover:bg-gray-600 transition-all"
+            >
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2" />
+              View on Etherscan
+            </a>
           </div>
         </div>
       </div>
