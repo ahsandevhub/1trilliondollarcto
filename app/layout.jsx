@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content="/www.1trilliondollarcto.io_.png" />
+        <meta property="og:image" content="/screenshot.png" />
         <meta property="og:url" content="https://www.1trilliondollarcto.io/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Trillion Dollar Coin" />
@@ -43,11 +43,11 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
-        <meta name="twitter:image" content="/www.1trilliondollarcto.io_.png" />
+        <meta name="twitter:image" content="/screenshot.png" />
         <meta name="twitter:site" content="@1TonEthCTO" />
 
         {/* Favicon (Optional) */}
-        <link rel="icon" href="/1t coin logo new.png" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`antialiased min-h-screen bg-[#050e27]`}>
         <Header />
