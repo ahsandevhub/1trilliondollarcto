@@ -37,7 +37,7 @@ const HomePage = () => {
   return (
     <div className="">
       {/* Hero Section */}
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-950 to-black relative overflow-hidden">
+      <div className="min-h-screen py-20 flex items-center justify-center bg-gradient-to-b from-gray-950 to-black relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -51,9 +51,9 @@ const HomePage = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+          <div className="container max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
             {/* Left Content */}
-            <div className="left text-white space-y-6">
+            <div className="left sm:text-start text-center text-white space-y-6">
               <h1 className="text-5xl md:text-8xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent">
                 <div>Trillion</div>
                 Dollar Coin
@@ -114,7 +114,7 @@ const HomePage = () => {
               <Image
                 src={Logo}
                 alt="1 trillion dollar coin"
-                className="h-[300px] md:h-[600px] w-auto drop-shadow-silver-glow"
+                className="h-[300px] md:h-[550px] w-auto drop-shadow-silver-glow"
                 priority
               />
             </div>
@@ -125,23 +125,23 @@ const HomePage = () => {
       {/* About Us Section */}
       <div className="min-h-screen flex items-center bg-gradient-to-r from-gray-950 via-gray-800 to-black text-white">
         <div className="container max-w-screen-xl mx-auto px-6 py-16 mt-8 text-center md:text-left">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Section: Embedded DEXTools Link */}
-            <div className="flex justify-center">
+            <div className="h-full w-full aspect-video">
               <iframe
                 id="dextools-widget"
                 title="DEXTools Trading Chart"
                 src="https://www.dextools.io/widget-chart/en/ether/pe-light/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f?theme=dark&chartType=2&chartResolution=30&drawingToolbars=false"
-                className="h-full w-full rounded-md border"
+                className="h-full w-full rounded-md border border-gray-600"
               ></iframe>
             </div>
 
             {/* Right Section: About Details */}
-            <div className="text-lg md:text-xl text-gray-300 space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent mb-8">
+            <div className="text-center text-gray-300 space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent mb-8">
                 About Trillion Dollar Coin
               </h2>
-              <p>
+              <p className="text-base">
                 Community Takeover of the 1T Coin: A Trillion Dollar Coin for
                 the People by the people The 1T CTO is a satirical
                 community-driven initiative to claim ownership of the
