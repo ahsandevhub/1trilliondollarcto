@@ -91,7 +91,7 @@ const HomePage = () => {
                   <FontAwesomeIcon icon={faXTwitter} />
                 </a>
                 <a
-                  href="https://t.me/TrillionDollarCoin_ETH"
+                  href="https://t.me/+v_HDjkhisLdlMGE1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white text-2xl md:text-4xl transition-colors"
@@ -180,7 +180,7 @@ const HomePage = () => {
               </p>
               <div className="flex justify-center space-x-6">
                 <a
-                  href="https://t.me/TrillionDollarCoin_ETH"
+                  href="https://t.me/+v_HDjkhisLdlMGE1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white text-2xl md:text-3xl transition-colors"
