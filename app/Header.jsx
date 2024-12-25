@@ -90,7 +90,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faChartBar} />
           </a>
           <a
-            href="https://dexscreener.com/ethereum/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3"
+            href="https://etherscan.io/token/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-sky-400 text-2xl transition-colors"

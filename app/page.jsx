@@ -107,7 +107,7 @@ const HomePage = () => {
                   <FontAwesomeIcon icon={faChartBar} />
                 </a>
                 <a
-                  href="https://dexscreener.com/ethereum/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3"
+                  href="https://etherscan.io/token/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white text-2xl md:text-4xl transition-colors"
@@ -116,7 +116,7 @@ const HomePage = () => {
                 </a>
               </div>
               <a
-                href="https://etherscan.io/token/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3"
+                href="https://dexscreener.com/ethereum/0xa51e5C7d7d36e7fA6173a229A887A403C67C611F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block md:text-xl font-semibold tracking-wide px-5 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-lg shadow-md transition-all"
@@ -156,7 +156,7 @@ const HomePage = () => {
               <iframe
                 id="dextools-widget"
                 title="DEXTools Trading Chart"
-                src="https://www.dextools.io/widget-chart/en/ether/pe-light/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3?theme=dark&chartType=2&chartResolution=30&drawingToolbars=false"
+                src="https://www.dextools.io/widget-chart/en/ether/pe-light/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f?theme=dark&chartType=3&chartResolution=100&drawingToolbars=false"
                 className="h-full w-full max-w-screen-md aspect-video rounded-md border border-gray-600"
               ></iframe>
             </div>
@@ -204,7 +204,7 @@ const HomePage = () => {
                   <FontAwesomeIcon icon={faChartBar} />
                 </a>
                 <a
-                  href="https://dexscreener.com/ethereum/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3"
+                  href="https://etherscan.io/token/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white text-2xl md:text-3xl transition-colors"
