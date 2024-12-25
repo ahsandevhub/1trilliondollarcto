@@ -342,7 +342,7 @@ const HomePage = () => {
                 4. Get Rich
               </h3>
               <p className="text-lg text-gray-400">
-                Lastly, HOLD onto your $1T and see your money grow.
+                Lastly, HOLD for 1 Trillion market cap!
               </p>
             </div>
           </div>
