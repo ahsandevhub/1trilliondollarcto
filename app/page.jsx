@@ -73,15 +73,15 @@ const HomePage = () => {
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="container max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
             {/* Left Content */}
-            <div className="left sm:text-start text-center text-white space-y-6">
+            <div className="left lg:text-start text-center text-white space-y-6">
               <h1 className="text-5xl md:text-8xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent">
                 <div>Trillion</div>
                 Dollar Coin
               </h1>
-              <p className="text-xl md:text-3xl text-gray-300">
+              <p className="text-xl lg:text-3xl text-gray-300">
                 LP BURN AND 0 TAX! <br /> CA:
               </p>
-              <div className="icons flex space-x-6">
+              <div className="icons flex lg:justify-normal justify-center space-x-6">
                 <a
                   href="https://x.com/1T_ERC"
                   target="_blank"
@@ -275,7 +275,7 @@ const HomePage = () => {
       </div>
 
       {/* How to buy */}
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-950 via-gray-800 to-black text-white py-16">
+      <div className="flex items-center justify-center bg-gradient-to-r from-gray-950 via-gray-800 to-black text-white py-32">
         <div className="container max-w-screen-xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent mb-12">
             How To Buy

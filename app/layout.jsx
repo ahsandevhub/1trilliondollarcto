@@ -1,4 +1,5 @@
 import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import Footer from "./Footer";
 import "./globals.css";
 import Header from "./Header";
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       <body className={`antialiased min-h-screen bg-[#050e27]`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
