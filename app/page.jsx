@@ -79,7 +79,11 @@ const HomePage = () => {
                 Dollar Coin
               </h1>
               <p className="text-xl lg:text-3xl text-gray-300">
-                LP BURN AND 0 TAX! <br /> CA:
+                LP BURN AND 0 TAX!
+              </p>
+              <p className="break-words md:text-xl sm:text-lg text-sm">
+                <span className="bg-sky-400 px-1 rounded">CA:</span>{" "}
+                0x64D8AC8b156807EbEa39f55cf4A98016bEa0ADE3
               </p>
               <div className="icons flex lg:justify-normal justify-center space-x-6">
                 <a
