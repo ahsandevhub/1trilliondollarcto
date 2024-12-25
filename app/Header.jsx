@@ -23,7 +23,7 @@ const Header = () => {
     <header className="container z-50 max-w-screen-xl w-[96%] backdrop-blur bg-gray-950/50 fixed sm:top-4 top-2 left-1/2 -translate-x-1/2 text-slate-200 border border-slate-800 shadow-lg rounded-md">
       <div className="sm:px-5 sm:py-4 px-3 py-2 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="#home" className="flex items-center gap-2">
           <Image src={Logo} alt="1t logo" className="h-8 w-auto" />
           <div className="txt">
             <h1 className="logo md:block hidden text-xl font-bold">
@@ -35,7 +35,7 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6 text-lg">
           <Link
-            href="#"
+            href="#home"
             className="group relative hover:text-sky-400 transition-all duration-300"
           >
             Home

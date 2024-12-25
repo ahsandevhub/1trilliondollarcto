@@ -10,7 +10,10 @@ import {
   faChartBar,
   faCheck,
   faCopy,
+  faExchangeAlt,
   faExternalLinkAlt,
+  faMoneyBillWave,
+  faWallet,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -51,7 +54,10 @@ const HomePage = () => {
   return (
     <div className="">
       {/* Hero Section */}
-      <div className="min-h-screen py-20 flex items-center justify-center bg-gradient-to-b from-gray-950 to-black relative overflow-hidden">
+      <div
+        id="#home"
+        className="min-h-screen py-20 flex items-center justify-center bg-gradient-to-b from-gray-950 to-black relative overflow-hidden"
+      >
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -110,7 +116,9 @@ const HomePage = () => {
                 </a>
               </div>
               <a
-                href="#"
+                href="https://etherscan.io/token/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block md:text-xl font-semibold tracking-wide px-5 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-lg shadow-md transition-all"
               >
                 B u y &nbsp; $ 1 T
@@ -137,7 +145,10 @@ const HomePage = () => {
       </div>
 
       {/* About Us Section */}
-      <div className="min-h-screen flex items-center bg-gradient-to-r from-gray-950 via-gray-800 to-black text-white">
+      <div
+        id="about"
+        className="min-h-screen flex items-center bg-gradient-to-r from-gray-950 via-gray-800 to-black text-white"
+      >
         <div className="container max-w-screen-xl mx-auto px-6 py-16 mt-8 text-center md:text-left">
           <div className="grid items-center grid-cols-1 gap-12">
             {/* Left Section: Embedded DEXTools Link */}
@@ -207,13 +218,16 @@ const HomePage = () => {
       </div>
 
       {/* Tokenomics Section */}
-      <div className="relative flex justify-center items-center bg-gradient-to-b from-gray-950 to-black text-white py-16">
+      <div
+        id="tokenomics"
+        className="relative flex justify-center items-center bg-gradient-to-b from-gray-950 to-black text-white py-16"
+      >
         <div className="absolute inset-0 z-0">
           <Image
             src="/photo_2024-12-24_01-11-08.jpg"
             alt="Background"
             layout="fill"
-            objectFit="contain"
+            objectFit="cover"
             className="opacity-20"
           />
         </div>
@@ -224,7 +238,7 @@ const HomePage = () => {
 
           {/* Token Address */}
           <div className="flex justify-center space-x-4 items-center">
-            <span className="bg-gray-700 text-white px-4 py-2 rounded-md text-lg md:text-xl">
+            <span className="bg-gray-700 text-white px-4 py-2 rounded-md text-sm lg:text-xl">
               0xa51e5c7d7d36e7fa6173a229a887a403c67c611f
             </span>
           </div>
@@ -256,6 +270,81 @@ const HomePage = () => {
               <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2" />
               View on Etherscan
             </a>
+          </div>
+        </div>
+      </div>
+
+      {/* How to buy */}
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-950 via-gray-800 to-black text-white py-16">
+        <div className="container max-w-screen-xl mx-auto px-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent mb-12">
+            How To Buy
+          </h2>
+
+          {/* Process Cards with Glass Effect */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Step 1: Create a Wallet */}
+            <div className="bg-gray-900 border border-gray-600 hover:scale-105 transition-all odd:hover:rotate-3 hover:even:-rotate-3 backdrop-blur-lg p-6 rounded-xl shadow-xl flex flex-col items-center">
+              <div className="bg-silver text-gray-900 p-4 rounded-full mb-4">
+                <FontAwesomeIcon icon={faWallet} className="text-4xl" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-300 mb-4">
+                1. Create a Wallet
+              </h3>
+              <p className="text-lg text-gray-400">
+                Create a wallet with MetaMask. You can follow the easy steps
+                when given the option to create a new account.
+              </p>
+            </div>
+
+            {/* Step 2: Get Some ETH */}
+            <div className="bg-gray-900 border border-gray-600 hover:scale-105 transition-all odd:hover:rotate-3 hover:even:-rotate-3 backdrop-blur-lg p-6 rounded-xl shadow-xl flex flex-col items-center">
+              <div className="bg-silver text-gray-900 p-4 rounded-full mb-4">
+                <FontAwesomeIcon icon={faEthereum} className="text-4xl" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-300 mb-4">
+                2. Get Some ETH
+              </h3>
+              <p className="text-lg text-gray-400">
+                You can deposit $ETH into your MetaMask wallet using any crypto
+                exchange of your choice.
+              </p>
+            </div>
+
+            {/* Step 3: Use Uniswap */}
+            <div className="bg-gray-900 border border-gray-600 hover:scale-105 transition-all odd:hover:rotate-3 hover:even:-rotate-3 backdrop-blur-lg p-6 rounded-xl shadow-xl flex flex-col items-center">
+              <div className="bg-silver text-gray-900 p-4 rounded-full mb-4">
+                <FontAwesomeIcon icon={faExchangeAlt} className="text-4xl" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-300 mb-4">
+                3. Use Uniswap
+              </h3>
+              <p className="text-lg text-gray-400">
+                Connect your wallet, paste the $1T token address into Uniswap (
+                <a
+                  href="https://app.uniswap.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-400"
+                >
+                  CLICK HERE
+                </a>
+                ). Now swap your ETH to buy $1T.
+              </p>
+            </div>
+
+            {/* Step 4: Get Rich */}
+            <div className="bg-gray-900 border border-gray-600 hover:scale-105 transition-all odd:hover:rotate-3 hover:even:-rotate-3 backdrop-blur-lg p-6 rounded-xl shadow-xl flex flex-col items-center">
+              <div className="bg-silver text-gray-900 p-4 rounded-full mb-4">
+                <FontAwesomeIcon icon={faMoneyBillWave} className="text-4xl" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-300 mb-4">
+                4. Get Rich
+              </h3>
+              <p className="text-lg text-gray-400">
+                Lastly, HOLD onto your $1T and see your money grow.
+              </p>
+            </div>
           </div>
         </div>
       </div>
