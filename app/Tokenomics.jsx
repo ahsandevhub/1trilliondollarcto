@@ -12,7 +12,7 @@ const Tokenomics = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("0xa51e5c7d7d36e7fa6173a229a887a403c67c611f");
+    navigator.clipboard.writeText("0x64d8ac8b156807ebea39f55cf4a98016bea0ade3");
     setCopied(true);
     setTimeout(() => {
       setCopied(false); // Reset after 2 seconds
@@ -32,7 +32,7 @@ const Tokenomics = () => {
             Token Address:
           </span>
           <span className="bg-gray-700 text-white px-4 py-2 rounded-md text-lg md:text-xl">
-            0xa51e5c7d7d36e7fa6173a229a887a403c67c611f
+            0x64d8ac8b156807ebea39f55cf4a98016bea0ade3
           </span>
 
           {!copied ? (
@@ -53,7 +53,7 @@ const Tokenomics = () => {
         {/* Etherscan Link */}
         <div className="flex justify-center">
           <a
-            href="https://etherscan.io/token/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f"
+            href="https://etherscan.io/token/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-gray-700 text-white px-6 py-3 rounded-md text-lg md:text-xl hover:bg-gray-600 transition-all"

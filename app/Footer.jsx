@@ -36,7 +36,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faTelegram} />
           </a>
           <a
-            href="https://www.dextools.io/app/en/ether/pair-explorer/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f?t=1735138501569"
+            href="https://www.dextools.io/app/en/ether/pair-explorer/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3?t=1735138501569"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-sky-400 text-2xl transition-colors"
@@ -44,7 +44,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faChartBar} />
           </a>
           <a
-            href="https://dexscreener.com/ethereum/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f"
+            href="https://dexscreener.com/ethereum/0x64d8ac8b156807ebea39f55cf4a98016bea0ade3"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-sky-400 text-2xl transition-colors"
