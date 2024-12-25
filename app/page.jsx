@@ -131,9 +131,8 @@ const HomePage = () => {
               <iframe
                 id="dextools-widget"
                 title="DEXTools Trading Chart"
-                width="500"
-                height="400"
-                src="https://www.dextools.io/widget-chart/en/ether/pe-light/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"
+                src="https://www.dextools.io/widget-chart/en/ether/pe-light/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f?theme=dark&chartType=2&chartResolution=30&drawingToolbars=false"
+                className="h-full w-full rounded-md border"
               ></iframe>
             </div>
 
