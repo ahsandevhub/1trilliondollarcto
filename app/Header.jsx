@@ -66,7 +66,7 @@ const Header = () => {
 
         <div className="icons flex space-x-4">
           <a
-            href="https://x.com/1T_ERC"
+            href="https://x.com/1tonethcto?s=21&t=d8b8rq8SqTvhA3NSEZytJw"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-sky-400 text-2xl transition-colors"
