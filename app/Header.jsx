@@ -104,52 +104,42 @@ const Header = () => {
           className="md:hidden text-2xl focus:outline-none"
           onClick={toggleMenu}
         >
-          ☰
+          {isMenuOpen ? "✖" : "☰"} {/* Change icon based on menu state */}
         </button>
 
         {/* Mobile Navigation */}
-        {/* {isMenuOpen && (
-          <nav className="absolute top-16 left-0 w-full bg-[#010314] text-lg font-medium shadow-lg">
-            <ul className="flex flex-col space-y-4 p-4">
-              <li>
-                <Link
-                  href="/about"
-                  className="hover:text-pink-400"
-                  onClick={toggleMenu}
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/tokenomics"
-                  className="hover:text-pink-400"
-                  onClick={toggleMenu}
-                >
-                  Tokenomics
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/socials"
-                  className="hover:text-pink-400"
-                  onClick={toggleMenu}
-                >
-                  Socials
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/"
-                  className="hover:text-pink-400"
-                  onClick={toggleMenu}
-                >
-                  Home
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        )} */}
+        {isMenuOpen && (
+          <div className="md:hidden absolute top-0 left-1/2 transform -translate-x-1/2 mt-14 w-full bg-gray-800 text-white p-4 space-y-4 rounded-md">
+            <Link
+              href="#home"
+              className="block hover:text-sky-400"
+              onClick={toggleMenu}
+            >
+              Home
+            </Link>
+            <Link
+              href="#about"
+              className="block hover:text-sky-400"
+              onClick={toggleMenu}
+            >
+              About
+            </Link>
+            <Link
+              href="#tokenomics"
+              className="block hover:text-sky-400"
+              onClick={toggleMenu}
+            >
+              Tokenomics
+            </Link>
+            <Link
+              href="#socials"
+              className="block hover:text-sky-400"
+              onClick={toggleMenu}
+            >
+              Socials
+            </Link>
+          </div>
+        )}
       </div>
     </header>
   );
