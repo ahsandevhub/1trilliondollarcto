@@ -82,7 +82,7 @@ const HomePage = () => {
                 LP BURN AND 0 TAX!
               </p>
               <p className="break-words md:text-xl sm:text-lg text-sm">
-                <span className="bg-sky-400 px-1 rounded">CA:</span>{" "}
+                <span className="bg-gray-800 px-1 rounded">CA:</span>{" "}
                 0x64D8AC8b156807EbEa39f55cf4A98016bEa0ADE3
               </p>
               <div className="icons flex lg:justify-normal justify-center space-x-6">
@@ -153,7 +153,7 @@ const HomePage = () => {
         id="about"
         className="min-h-screen flex items-center bg-gradient-to-r from-gray-950 via-gray-800 to-black text-white"
       >
-        <div className="container max-w-screen-xl mx-auto px-6 py-16 mt-8 text-center md:text-left">
+        <div className="container max-w-screen-xl mx-auto sm:px-6 py-16 sm:mt-8 text-center md:text-left">
           <div className="grid items-center grid-cols-1 gap-12">
             {/* Left Section: Embedded DEXTools Link */}
             <div className="h-full w-full flex justify-center items-center">
@@ -161,12 +161,12 @@ const HomePage = () => {
                 id="dextools-widget"
                 title="DEXTools Trading Chart"
                 src="https://www.dextools.io/widget-chart/en/ether/pe-light/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f?theme=dark&chartType=3&chartResolution=100&drawingToolbars=false"
-                className="h-full w-full max-w-screen-md aspect-video rounded-md border border-gray-600"
+                className="sm:h-full w-full max-w-screen-md sm:aspect-video h-72 sm:rounded-md border border-gray-600"
               ></iframe>
             </div>
 
             {/* Right Section: About Details */}
-            <div className="text-center max-w-screen-md mx-auto text-gray-300 space-y-6">
+            <div className="text-center max-w-screen-md px-6 mx-auto text-gray-300 space-y-6">
               <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent mb-8">
                 About Trillion Dollar Coin
               </h2>
@@ -242,7 +242,7 @@ const HomePage = () => {
 
           {/* Token Address */}
           <div className="flex justify-center space-x-4 items-center">
-            <span className="bg-gray-700 text-white px-4 py-2 rounded-md text-sm lg:text-xl">
+            <span className="bg-gray-700 break-all text-white px-4 py-2 rounded-md text-sm lg:text-xl">
               0x64d8ac8b156807ebea39f55cf4a98016bea0ade3
             </span>
           </div>
@@ -279,7 +279,7 @@ const HomePage = () => {
       </div>
 
       {/* How to buy */}
-      <div className="flex items-center justify-center bg-gradient-to-r from-gray-950 via-gray-800 to-black text-white py-32">
+      <div className="flex items-center justify-center bg-gradient-to-r from-gray-950 via-gray-800 to-black text-white sm:py-32 py-20">
         <div className="container max-w-screen-xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent mb-12">
             How To Buy
