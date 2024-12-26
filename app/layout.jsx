@@ -7,49 +7,63 @@ import Header from "./Header";
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
-  weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // Specify weights if required
+  weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
-  styles: ["normal", "italic"], // Include italic if needed
+  styles: ["normal", "italic"],
 });
 
 export const metadata = {
-  title: "Trillion Dollar Coin - 1T",
+  metadataBase: new URL("https://www.1trilliondollarcto.io/"),
+  title: {
+    default:
+      "Trillion Dollar Coin (1T) - A Trillion Dollar Coin for the People by the People.",
+    template: "%s - Trillion Dollar Coin (1T)",
+  },
   description:
-    'Community Takeover of the 1T Coin: A Trillion Dollar Coin for the People by the people. The 1T CTO is a satirical community-driven initiative to claim ownership of the much-discussed yet often derided concept of the "Trillion Dollar Coin." Originally proposed as a means to bypass the U.S. debt ceiling, the trillion-dollar coin has been called a "dumb idea" by financial expert Peter Schiff but continues to capture the public imagination. This project embraces the idea of the coin not as a serious financial tool but as a symbol of collective action, unity, and financial reimagining.',
+    'Community Takeover of the 1T Coin: A Trillion Dollar Coin for the People by the People. The 1T CTO is a satirical community-driven initiative to claim ownership of the much-discussed yet often derided concept of the "Trillion Dollar Coin." Originally proposed as a means to bypass the U.S. debt ceiling, the trillion-dollar coin has been called a "dumb idea" by financial expert Peter Schiff but continues to capture the public imagination. This project embraces the idea of the coin not as a serious financial tool but as a symbol of collective action, unity, and financial reimagining.',
+  keywords: "trillion dollar coin, 1T coin, community coin, satirical coin",
+  openGraph: {
+    title: "Trillion Dollar Coin (1T)",
+    description:
+      'Community Takeover of the 1T Coin: A Trillion Dollar Coin for the People by the People. The 1T CTO is a satirical community-driven initiative to claim ownership of the much-discussed yet often derided concept of the "Trillion Dollar Coin."',
+    url: "https://www.1trilliondollarcto.io/",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Trillion Dollar Coin (1T)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trillion Dollar Coin (1T)",
+    description:
+      'Community Takeover of the 1T Coin: A Trillion Dollar Coin for the People by the People. The 1T CTO is a satirical community-driven initiative to claim ownership of the much-discussed yet often derided concept of the "Trillion Dollar Coin."',
+    images: [
+      {
+        url: "/og-image.png",
+        alt: "Trillion Dollar Coin (1T)",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content="/screenshot.png" />
-        <meta property="og:url" content="https://www.1trilliondollarcto.io/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Trillion Dollar Coin" />
-
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={metadata.title} />
-        <meta name="twitter:description" content={metadata.description} />
-        <meta name="twitter:image" content="/screenshot.png" />
-        <meta name="twitter:site" content="@1TonEthCTO" />
-
-        {/* Favicon (Optional) */}
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`antialiased min-h-screen bg-[#050e27]`}>
+      <body
+        className={`${outfit.variable} ${plusJakartaSans.variable} antialiased min-h-screen bg-[#050e27]`}
+      >
         <Header />
         {children}
         <Footer />
