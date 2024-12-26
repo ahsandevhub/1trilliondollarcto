@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://www.1trilliondollarcto.io/favicon.ico" />
       </head>
       <body
         className={`${outfit.variable} ${plusJakartaSans.variable} antialiased min-h-screen bg-[#050e27]`}
