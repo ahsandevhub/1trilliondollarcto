@@ -258,7 +258,7 @@ const HomePage = () => {
                         "https://tokensniffer.com/token/eth/cks2v9buvgddj61kdvgexqaja90hz8141bz5mse9hvxo6kjaei9ux92alee0"
                       }
                       readOnly
-                      className="w-full px-3 py-1 bg-gray-800 text-slate-200 rounded-md outline-none border border-gray-600 focus:border-blue-500 transition"
+                      className="w-full sm:text-base text-sm px-3 py-1 bg-gray-800 text-slate-200 rounded-md outline-none border border-gray-600 focus:border-blue-500 transition"
                     />
                   </div>
                 </div>
@@ -331,7 +331,7 @@ const HomePage = () => {
                         "https://www.geckoterminal.com/eth/pools/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"
                       }
                       readOnly
-                      className="w-full px-3 py-1 bg-gray-800 text-slate-200 rounded-md outline-none border border-gray-600 focus:border-blue-500 transition"
+                      className="w-full sm:text-base text-sm px-3 py-1 bg-gray-800 text-slate-200 rounded-md outline-none border border-gray-600 focus:border-blue-500 transition"
                     />
                   </div>
                 </div>
