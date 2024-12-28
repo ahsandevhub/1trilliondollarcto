@@ -20,7 +20,7 @@ const Footer = () => {
         {/* Footer Links */}
         <div className="icons space-x-4">
           <a
-            href="https://x.com/1tonethcto?s=21&t=d8b8rq8SqTvhA3NSEZytJw"
+            href="https://x.com/1TrillionCoinIO"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-sky-400 text-2xl transition-colors"

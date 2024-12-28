@@ -87,7 +87,7 @@ const HomePage = () => {
               </p>
               <div className="icons flex lg:justify-normal justify-center space-x-6">
                 <a
-                  href="https://x.com/1tonethcto?s=21&t=d8b8rq8SqTvhA3NSEZytJw"
+                  href="https://x.com/1TrillionCoinIO"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white text-2xl md:text-4xl transition-colors"
@@ -192,7 +192,7 @@ const HomePage = () => {
                   <FontAwesomeIcon icon={faTelegram} />
                 </a>
                 <a
-                  href="https://x.com/1tonethcto?s=21&t=d8b8rq8SqTvhA3NSEZytJw"
+                  href="https://x.com/1TrillionCoinIO"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white text-2xl md:text-3xl transition-colors"
