@@ -362,7 +362,7 @@ const HomePage = () => {
               {/* Token Sniffer Link Button */}
               <div className="mt-6">
                 <a
-                  href="https://tokensniffer.com/token/eth/cks2v9buvgddj61kdvgexqaja90hz8141bz5mse9hvxo6kjaei9ux92alee0"
+                  href="https://www.geckoterminal.com/eth/pools/0xa51e5c7d7d36e7fa6173a229a887a403c67c611f?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-gray-800 hover:bg-slate-950 border-2 sm:text-xl text-lg border-violet-500 text-white font-semibold rounded-md transition-colors space-x-3"
