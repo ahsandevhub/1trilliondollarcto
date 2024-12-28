@@ -231,28 +231,51 @@ const HomePage = () => {
             {/* Token Sniffer Score and Iframe */}
             <div className="h-full w-full flex flex-col items-center">
               {/* Score Display */}
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-silver via-gray-400 to-gray-800 bg-clip-text text-transparent sm:mb-16 mb-8">
                 Achieving A Perfect Score
               </h2>
 
               {/* Browser-Like Container */}
-              <div className="w-full relative mb-4 max-w-screen-md sm:aspect-video border border-gray-600 rounded-md bg-gray-800">
+              <div className="w-full relative overflow-hidden mb-4 max-w-screen-md border border-gray-600 rounded-md bg-gray-800">
                 {/* Browser Tab Bar */}
-                <div className="absolute -top-7 left-0 w-full flex items-center space-x-2 px-4 py-2 bg-gray-700 rounded-t-md">
+                <div className="w-full flex items-center space-x-2 px-4 py-2 bg-gray-700 rounded-t-md">
+                  {/* Browser Buttons */}
                   <div className="h-3 w-3 rounded-full bg-red-500"></div>
                   <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
                   <div className="h-3 w-3 rounded-full bg-green-500"></div>
+
+                  {/* Search Box */}
+                  <div className="flex-1 flex items-center ml-4">
+                    <input
+                      type="url"
+                      placeholder="Enter URL"
+                      defaultValue={
+                        "https://tokensniffer.com/token/eth/cks2v9buvgddj61kdvgexqaja90hz8141bz5mse9hvxo6kjaei9ux92alee0"
+                      }
+                      readOnly
+                      className="w-full px-3 py-1 bg-gray-800 text-slate-200 rounded-md outline-none border border-gray-600 focus:border-blue-500 transition"
+                    />
+                  </div>
                 </div>
+
                 {/* Iframe */}
-                <iframe
+                {/* <iframe
                   id="token-sniffer"
                   title="Token Sniffer Score: 100/100"
                   src="https://tokensniffer.com/token/eth/cks2v9buvgddj61kdvgexqaja90hz8141bz5mse9hvxo6kjaei9ux92alee0"
                   className="sm:h-full w-full max-w-screen-md sm:aspect-video h-72 rounded-b-md"
-                ></iframe>
+                ></iframe> */}
+                <Image
+                  src={"/tokensniffer ss.png"}
+                  alt=""
+                  height={1600}
+                  width={1600}
+                  aria-readonly
+                  className="h-full w-full max-w-screen-md rounded-b-md"
+                />
               </div>
 
-              <p className="bg-sky-500 px-6 py-1 text-white rounded-full font-medium sm:text-lg">
+              <p className="bg-sky-500 px-6 py-1 text-white rounded-full font-medium sm:text-lg mt-5">
                 Score: 100/100 on TokenSniffer
               </p>
 
